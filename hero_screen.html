@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creating Digital Poetry — Glacier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface": "#e0e8f0",
+                        "error": "#ff6b6b",
+                        "on-tertiary": "#1a002e",
+                        "on-secondary-fixed-variant": "#2a4a5e",
+                        "outline": "#4a6070",
+                        "tertiary-fixed-dim": "#c8a0f0",
+                        "surface-tint": "#7dd3fc",
+                        "surface-container": "#141c2e",
+                        "surface-container-highest": "#202c42",
+                        "tertiary-container": "#3d2060",
+                        "primary-fixed": "#c8eaff",
+                        "primary-container": "#0e4d6e",
+                        "tertiary-fixed": "#e8d0ff",
+                        "surface-container-lowest": "#0a0e1a",
+                        "inverse-on-surface": "#0a0e1a",
+                        "on-secondary-container": "#c0d8e8",
+                        "on-primary-container": "#c8eaff",
+                        "surface-bright": "#1a2438",
+                        "secondary-container": "#1a3a4e",
+                        "inverse-surface": "#e0e8f0",
+                        "outline-variant": "#2a3a48",
+                        "on-tertiary-fixed-variant": "#4d2a73",
+                        "secondary": "#88b4cc",
+                        "on-tertiary-container": "#e8d0ff",
+                        "on-primary-fixed": "#001f2e",
+                        "on-tertiary-fixed": "#1a002e",
+                        "on-surface-variant": "#a0b4c4",
+                        "inverse-primary": "#0a4c6e",
+                        "surface-variant": "#1a2438",
+                        "on-error-container": "#ffb3b3",
+                        "on-background": "#e0e8f0",
+                        "primary": "#7dd3fc",
+                        "surface": "#0f1524",
+                        "surface-container-high": "#1a2438",
+                        "on-secondary": "#001f2e",
+                        "on-primary": "#001f2e",
+                        "background": "#0a0e1a",
+                        "surface-dim": "#0f1524",
+                        "surface-container-low": "#111828",
+                        "secondary-fixed": "#c0d8e8",
+                        "primary-fixed-dim": "#7dd3fc",
+                        "on-secondary-fixed": "#0d1f2b",
+                        "secondary-fixed-dim": "#88b4cc",
+                        "on-primary-fixed-variant": "#004d73",
+                        "on-error": "#1a0000",
+                        "tertiary": "#c8a0f0",
+                        "error-container": "#3d1414"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter", "sans-serif"],
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-md border-b border-sky-300/10 shadow-[0_0_30px_rgba(125,211,252,0.05)] font-inter antialiased tracking-tight">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<a class="text-xl font-semibold text-sky-300 tracking-widest uppercase ease-in-out transform active:scale-95" href="#">GLACIER</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium tracking-wide" href="#">Work</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium tracking-wide" href="#">Expertise</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium tracking-wide" href="#">Process</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium tracking-wide" href="#">About</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-sky-300 border border-sky-300/20 rounded-full hover:bg-sky-300/10 hover:text-sky-100 hover:shadow-[0_0_15px_rgba(125,211,252,0.2)] transition-all duration-500 ease-in-out transform active:scale-95" href="#">
+                Connect
+            </a>
+<button class="md:hidden text-sky-300 p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 px-6">
+<!-- Ambient Glow Effects -->
+<div class="absolute top-1/4 left-1/4 w-[40rem] h-[40rem] bg-primary/10 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-tertiary/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen"></div>
+<div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center text-center">
+<!-- Minimalist Eyebrow -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container/60 backdrop-blur-md border border-primary/10 mb-8 shadow-[0_0_20px_rgba(125,211,252,0.05)]">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="text-xs font-label text-on-surface-variant tracking-widest uppercase">Ethereal Interactions</span>
+</div>
+<!-- Massive Headline -->
+<h1 class="text-6xl md:text-8xl lg:text-[9rem] leading-[0.9] font-headline font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-on-surface to-on-surface-variant mb-6 pb-2">
+                Creating<br/>Digital Poetry
+            </h1>
+<p class="text-lg md:text-2xl font-light text-on-surface-variant max-w-2xl tracking-wide mb-16 px-4">
+                We shape premium digital experiences through layered translucency, frozen light, and atmospheric depth.
+            </p>
+<!-- 3D Sculpture Focal Point (Glassmorphism Container) -->
+<div class="relative w-full max-w-5xl mx-auto group">
+<!-- Deep Glass Layer -->
+<div class="absolute inset-0 bg-surface/40 backdrop-blur-[24px] border border-primary/10 rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5),0_0_40px_rgba(125,211,252,0.03)] transform transition-transform duration-1000 group-hover:scale-[1.01]"></div>
+<!-- Inner Highlight Ring -->
+<div class="absolute inset-0 rounded-[2rem] border border-white/5 pointer-events-none"></div>
+<!-- Abstract 3D Asset Container -->
+<div class="relative w-full aspect-[4/3] md:aspect-[21/9] flex items-center justify-center p-4 md:p-8 overflow-hidden rounded-[2rem]">
+<!-- Decorative subtle grid behind image -->
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-50"></div>
+<img alt="Abstract geometric 3D sculpture" class="relative z-10 w-[110%] h-[110%] object-cover object-center mix-blend-screen opacity-80 filter contrast-125 saturate-50 transition-all duration-1000 group-hover:opacity-100 group-hover:scale-105" data-alt="A sleek, highly detailed 3D abstract sculpture composed of interwoven chrome rings and frosted glass geometric shapes, floating weightlessly in a dark moody void, illuminated by soft ethereal ice-blue and lavender studio lighting, 8k resolution, photorealistic cinematic render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBspiQmoNadXSCqw-sAo0bfU0JKf6lxLlY879eYi5LHdfP0q6itBOlIkjibre5EcZIGD371Hmtq6AQl2SpD0oCtT7n6Zb6K7lb1wwX_d75G66dLD7KqTqWogXndzpGnFCf0FK0SzVnBphWhsYL9hR6IrwDWnvuU6A-1zylQT0sePqX-ioPhbiLdA1TwkPiea1a6iFOaFbBcBL5KFLSjjVFnruYCi51k0cYINLSGEOwuSSdzXc0Dmmmtf_88MWMZ3ylIeEgZMuVxZug"/>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-50 hover:opacity-100 transition-opacity duration-500 cursor-pointer">
+<span class="text-[10px] font-label text-on-surface-variant tracking-[0.3em] uppercase">Scroll</span>
+<div class="w-8 h-12 rounded-full border border-primary/20 flex items-start justify-center p-1 bg-surface/30 backdrop-blur-sm">
+<div class="w-1 h-3 bg-primary/70 rounded-full animate-[bounce_2s_infinite]"></div>
+</div>
+</div>
+</main>
+</body></html>

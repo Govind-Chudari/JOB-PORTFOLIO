@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Experience &amp; Skills — Glacier</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#e0e8f0",
+                      "error": "#ff6b6b",
+                      "on-tertiary": "#1a002e",
+                      "on-secondary-fixed-variant": "#2a4a5e",
+                      "outline": "#4a6070",
+                      "tertiary-fixed-dim": "#c8a0f0",
+                      "surface-tint": "#7dd3fc",
+                      "surface-container": "#141c2e",
+                      "surface-container-highest": "#202c42",
+                      "tertiary-container": "#3d2060",
+                      "primary-fixed": "#c8eaff",
+                      "primary-container": "#0e4d6e",
+                      "tertiary-fixed": "#e8d0ff",
+                      "surface-container-lowest": "#0a0e1a",
+                      "inverse-on-surface": "#0a0e1a",
+                      "on-secondary-container": "#c0d8e8",
+                      "on-primary-container": "#c8eaff",
+                      "surface-bright": "#1a2438",
+                      "secondary-container": "#1a3a4e",
+                      "inverse-surface": "#e0e8f0",
+                      "outline-variant": "#2a3a48",
+                      "on-tertiary-fixed-variant": "#4d2a73",
+                      "secondary": "#88b4cc",
+                      "on-tertiary-container": "#e8d0ff",
+                      "on-primary-fixed": "#001f2e",
+                      "on-tertiary-fixed": "#1a002e",
+                      "on-surface-variant": "#a0b4c4",
+                      "inverse-primary": "#0a4c6e",
+                      "surface-variant": "#1a2438",
+                      "on-error-container": "#ffb3b3",
+                      "on-background": "#e0e8f0",
+                      "primary": "#7dd3fc",
+                      "surface": "#0f1524",
+                      "surface-container-high": "#1a2438",
+                      "on-secondary": "#001f2e",
+                      "on-primary": "#001f2e",
+                      "background": "#0a0e1a",
+                      "surface-dim": "#0f1524",
+                      "surface-container-low": "#111828",
+                      "secondary-fixed": "#c0d8e8",
+                      "primary-fixed-dim": "#7dd3fc",
+                      "on-secondary-fixed": "#0d1f2b",
+                      "secondary-fixed-dim": "#88b4cc",
+                      "on-primary-fixed-variant": "#004d73",
+                      "on-error": "#1a0000",
+                      "tertiary": "#c8a0f0",
+                      "error-container": "#3d1414"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.5rem",
+                      "lg": "1rem",
+                      "xl": "1.5rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "display": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col relative selection:bg-primary/30 selection:text-primary-fixed">
+<!-- Ambient Background Effects (Frozen Light) -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+<div class="absolute top-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-primary/10 blur-[120px]"></div>
+<div class="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-tertiary/10 blur-[150px]"></div>
+<div class="absolute top-[40%] left-[60%] w-[30vw] h-[30vw] rounded-full bg-secondary/5 blur-[100px]"></div>
+</div>
+<!-- Shared Component: TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-md text-sky-300 font-inter antialiased tracking-tight border-b border-sky-300/10 shadow-[0_0_30px_rgba(125,211,252,0.05)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto w-full">
+<div class="text-xl font-semibold text-sky-300 tracking-widest uppercase">GLACIER</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 ease-in-out transform active:scale-95 text-sm font-medium" href="#">Work</a>
+<!-- Active State Match: Expertise -->
+<a class="text-sky-300 border-b border-sky-300 pb-1 ease-in-out transform active:scale-95 text-sm font-medium" href="#">Expertise</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 ease-in-out transform active:scale-95 text-sm font-medium" href="#">Process</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 ease-in-out transform active:scale-95 text-sm font-medium" href="#">About</a>
+</div>
+<button class="hidden md:flex items-center justify-center px-6 py-2.5 rounded-full border border-sky-300/30 bg-sky-300/10 text-sky-300 hover:bg-sky-300/20 transition-colors duration-300 text-sm font-medium">
+                Connect
+            </button>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-sky-300 p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10">
+<!-- Left Column: Timeline -->
+<section class="lg:col-span-7 flex flex-col gap-12">
+<header class="mb-4">
+<h1 class="text-4xl md:text-5xl font-headline font-semibold text-on-surface tracking-tight mb-4">Journey &amp; Milestones</h1>
+<p class="text-on-surface-variant text-lg max-w-xl font-light leading-relaxed">A continuous evolution of aesthetic precision and technical capability. Documenting the path of professional growth.</p>
+</header>
+<div class="relative pl-8 md:pl-10 border-l border-primary/20 flex flex-col gap-14">
+<!-- Timeline Item 1 -->
+<div class="relative group">
+<!-- Glowing Node -->
+<div class="absolute -left-[41px] md:-left-[49px] top-1.5 w-4 h-4 rounded-full bg-background border-[3px] border-primary shadow-[0_0_15px_rgba(125,211,252,0.6)] group-hover:scale-125 transition-transform duration-300"></div>
+<div class="bg-surface/50 backdrop-blur-xl border border-primary/10 rounded-2xl p-6 md:p-8 transition-all duration-500 hover:bg-surface/70 hover:border-primary/30 group-hover:shadow-[0_0_40px_rgba(125,211,252,0.05)]">
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-4">
+<div>
+<h3 class="text-2xl font-headline font-semibold text-on-surface">Lead Visual Designer</h3>
+<div class="text-on-surface-variant font-medium mt-1">Aura Dynamics</div>
+</div>
+<span class="inline-flex px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-label uppercase tracking-widest whitespace-nowrap">2022 — Present</span>
+</div>
+<p class="text-on-surface-variant/80 text-sm leading-loose">Spearheading the creation of a unified design system across three enterprise applications. Transitioned the product suite to a glassmorphic visual language, significantly improving user engagement metrics and brand perception.</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative group">
+<div class="absolute -left-[41px] md:-left-[49px] top-1.5 w-4 h-4 rounded-full bg-background border-[3px] border-tertiary shadow-[0_0_15px_rgba(200,160,240,0.4)] group-hover:scale-125 transition-transform duration-300"></div>
+<div class="bg-surface/40 backdrop-blur-xl border border-white/5 rounded-2xl p-6 md:p-8 transition-all duration-500 hover:bg-surface/60 hover:border-tertiary/30 group-hover:shadow-[0_0_40px_rgba(200,160,240,0.05)]">
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-4">
+<div>
+<h3 class="text-2xl font-headline font-semibold text-on-surface">Senior UX Engineer</h3>
+<div class="text-on-surface-variant font-medium mt-1">Lumina Collective</div>
+</div>
+<span class="inline-flex px-3 py-1 rounded-full bg-white/5 border border-white/10 text-on-surface-variant text-xs font-label uppercase tracking-widest whitespace-nowrap">2019 — 2022</span>
+</div>
+<p class="text-on-surface-variant/80 text-sm leading-loose">Bridged the gap between high-fidelity design and front-end execution. Built performant, accessible component libraries using React and Tailwind CSS, reducing development time for new features by 40%.</p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative group">
+<div class="absolute -left-[41px] md:-left-[49px] top-1.5 w-4 h-4 rounded-full bg-background border-[3px] border-secondary/50 group-hover:scale-125 transition-transform duration-300"></div>
+<div class="bg-surface/30 backdrop-blur-md border border-white/5 rounded-2xl p-6 md:p-8 transition-all duration-500 hover:bg-surface/50 hover:border-secondary/30">
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-4">
+<div>
+<h3 class="text-xl font-headline font-medium text-on-surface/80">Product Designer</h3>
+<div class="text-on-surface-variant/70 mt-1">Nova Labs</div>
+</div>
+<span class="inline-flex px-3 py-1 rounded-full bg-white/5 border border-white/10 text-on-surface-variant/70 text-xs font-label uppercase tracking-widest whitespace-nowrap">2016 — 2019</span>
+</div>
+<p class="text-on-surface-variant/60 text-sm leading-loose">Foundational role focusing on user research, wireframing, and iterative prototyping for consumer-facing mobile applications.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Skills & Capabilities -->
+<section class="lg:col-span-5 flex flex-col gap-12 mt-8 lg:mt-0 lg:pl-8">
+<header class="mb-2">
+<h2 class="text-3xl font-headline font-semibold text-on-surface tracking-tight mb-4">Core Capabilities</h2>
+<p class="text-on-surface-variant text-base font-light leading-relaxed">Quantifiable expertise across design disciplines.</p>
+</header>
+<!-- Elegant Progress Bars -->
+<div class="flex flex-col gap-8">
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<span class="font-headline font-medium text-on-surface text-lg group-hover:text-primary transition-colors">Interface Architecture</span>
+<span class="font-label text-primary text-sm tracking-wider">95%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden border border-white/5">
+<div class="h-full bg-gradient-to-r from-primary/50 to-primary w-[95%] rounded-full shadow-[0_0_15px_rgba(125,211,252,0.4)]"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<span class="font-headline font-medium text-on-surface text-lg group-hover:text-tertiary transition-colors">Design Systems</span>
+<span class="font-label text-tertiary text-sm tracking-wider">88%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden border border-white/5">
+<div class="h-full bg-gradient-to-r from-tertiary/50 to-tertiary w-[88%] rounded-full shadow-[0_0_15px_rgba(200,160,240,0.4)]"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between items-end mb-3">
+<span class="font-headline font-medium text-on-surface text-lg group-hover:text-secondary transition-colors">Motion &amp; Interaction</span>
+<span class="font-label text-secondary text-sm tracking-wider">75%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden border border-white/5">
+<div class="h-full bg-gradient-to-r from-secondary/50 to-secondary w-[75%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Floating Translucent Tools/Icons -->
+<div class="mt-4">
+<h3 class="text-xl font-headline font-medium text-on-surface mb-6">Technical Ecosystem</h3>
+<div class="flex flex-wrap gap-3">
+<div class="px-5 py-3 rounded-xl bg-surface/40 backdrop-blur-md border border-white/10 text-on-surface-variant flex items-center gap-3 hover:bg-primary/10 hover:border-primary/30 hover:text-primary hover:-translate-y-1 transition-all duration-300 cursor-default shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.1)]">
+<span class="material-symbols-outlined text-[20px]">design_services</span>
+<span class="text-sm font-medium">Figma</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-surface/40 backdrop-blur-md border border-white/10 text-on-surface-variant flex items-center gap-3 hover:bg-tertiary/10 hover:border-tertiary/30 hover:text-tertiary hover:-translate-y-1 transition-all duration-300 cursor-default shadow-sm hover:shadow-[0_4px_20px_rgba(200,160,240,0.1)]">
+<span class="material-symbols-outlined text-[20px]">animation</span>
+<span class="text-sm font-medium">Framer</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-surface/40 backdrop-blur-md border border-white/10 text-on-surface-variant flex items-center gap-3 hover:bg-primary/10 hover:border-primary/30 hover:text-primary hover:-translate-y-1 transition-all duration-300 cursor-default shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.1)]">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+<span class="text-sm font-medium">React</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-surface/40 backdrop-blur-md border border-white/10 text-on-surface-variant flex items-center gap-3 hover:bg-secondary/10 hover:border-secondary/30 hover:text-secondary hover:-translate-y-1 transition-all duration-300 cursor-default shadow-sm">
+<span class="material-symbols-outlined text-[20px]">css</span>
+<span class="text-sm font-medium">Tailwind CSS</span>
+</div>
+<div class="px-5 py-3 rounded-xl bg-surface/40 backdrop-blur-md border border-white/10 text-on-surface-variant flex items-center gap-3 hover:bg-white/10 hover:border-white/30 hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-default shadow-sm">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span class="text-sm font-medium">TypeScript</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Component: Footer -->
+<footer class="w-full mt-auto bg-slate-950/80 backdrop-blur-2xl border-t border-sky-300/5">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-12 max-w-7xl mx-auto w-full gap-8">
+<div class="text-lg font-bold text-sky-300">GLACIER</div>
+<div class="flex gap-6">
+<a class="font-inter text-xs tracking-wide text-slate-500 hover:text-sky-300 hover:glow-sm transition-all opacity-70 hover:opacity-100 duration-300" href="#">Twitter</a>
+<a class="font-inter text-xs tracking-wide text-slate-500 hover:text-sky-300 hover:glow-sm transition-all opacity-70 hover:opacity-100 duration-300" href="#">GitHub</a>
+<a class="font-inter text-xs tracking-wide text-slate-500 hover:text-sky-300 hover:glow-sm transition-all opacity-70 hover:opacity-100 duration-300" href="#">LinkedIn</a>
+<a class="font-inter text-xs tracking-wide text-slate-500 hover:text-sky-300 hover:glow-sm transition-all opacity-70 hover:opacity-100 duration-300" href="#">Layers</a>
+</div>
+<div class="font-inter text-xs tracking-wide text-slate-500 opacity-70">
+                © 2024 Glacier Portfolio. Crafted with Frozen Light.
+            </div>
+</div>
+</footer>
+</body></html>

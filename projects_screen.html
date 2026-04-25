@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Glacier - Projects Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#e0e8f0",
+                    "error": "#ff6b6b",
+                    "on-tertiary": "#1a002e",
+                    "on-secondary-fixed-variant": "#2a4a5e",
+                    "outline": "#4a6070",
+                    "tertiary-fixed-dim": "#c8a0f0",
+                    "surface-tint": "#7dd3fc",
+                    "surface-container": "#141c2e",
+                    "surface-container-highest": "#202c42",
+                    "tertiary-container": "#3d2060",
+                    "primary-fixed": "#c8eaff",
+                    "primary-container": "#0e4d6e",
+                    "tertiary-fixed": "#e8d0ff",
+                    "surface-container-lowest": "#0a0e1a",
+                    "inverse-on-surface": "#0a0e1a",
+                    "on-secondary-container": "#c0d8e8",
+                    "on-primary-container": "#c8eaff",
+                    "surface-bright": "#1a2438",
+                    "secondary-container": "#1a3a4e",
+                    "inverse-surface": "#e0e8f0",
+                    "outline-variant": "#2a3a48",
+                    "on-tertiary-fixed-variant": "#4d2a73",
+                    "secondary": "#88b4cc",
+                    "on-tertiary-container": "#e8d0ff",
+                    "on-primary-fixed": "#001f2e",
+                    "on-tertiary-fixed": "#1a002e",
+                    "on-surface-variant": "#a0b4c4",
+                    "inverse-primary": "#0a4c6e",
+                    "surface-variant": "#1a2438",
+                    "on-error-container": "#ffb3b3",
+                    "on-background": "#e0e8f0",
+                    "primary": "#7dd3fc",
+                    "surface": "#0f1524",
+                    "surface-container-high": "#1a2438",
+                    "on-secondary": "#001f2e",
+                    "on-primary": "#001f2e",
+                    "background": "#0a0e1a",
+                    "surface-dim": "#0f1524",
+                    "surface-container-low": "#111828",
+                    "secondary-fixed": "#c0d8e8",
+                    "primary-fixed-dim": "#7dd3fc",
+                    "on-secondary-fixed": "#0d1f2b",
+                    "secondary-fixed-dim": "#88b4cc",
+                    "on-primary-fixed-variant": "#004d73",
+                    "on-error": "#1a0000",
+                    "tertiary": "#c8a0f0",
+                    "error-container": "#3d1414"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "display": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #0a0e1a;
+            color: #e0e8f0;
+            font-family: 'Inter', sans-serif;
+            background-image: radial-gradient(circle at 50% 0%, rgba(125, 211, 252, 0.05) 0%, transparent 70%);
+        }
+        
+        .glass-panel {
+            background: rgba(15, 21, 36, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(125, 211, 252, 0.1);
+        }
+        
+        .glass-elevated {
+            background: rgba(15, 21, 36, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(125, 211, 252, 0.15);
+        }
+
+        .glow-hover:hover {
+            box-shadow: 0 0 30px rgba(125, 211, 252, 0.05);
+            border-color: rgba(125, 211, 252, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-body antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-md border-b border-sky-300/10 shadow-[0_0_30px_rgba(125,211,252,0.05)] ease-in-out transform active:scale-95">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto font-inter antialiased tracking-tight">
+<div class="text-xl font-semibold text-sky-300 tracking-widest uppercase">GLACIER</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-sky-300 border-b border-sky-300 pb-1 hover:text-sky-100 transition-colors duration-500 font-label" href="#">Work</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 font-label" href="#">Expertise</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 font-label" href="#">Process</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 font-label" href="#">About</a>
+</nav>
+<button class="hidden md:flex items-center space-x-2 text-sky-300 border border-sky-300/20 bg-sky-300/10 px-4 py-2 rounded-full hover:bg-sky-300/20 transition-all text-sm font-semibold">
+<span>Connect</span>
+</button>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<button class="md:hidden text-sky-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-8 max-w-7xl mx-auto w-full">
+<!-- Page Header -->
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-display font-bold text-on-surface mb-6 tracking-tight">Selected Work</h1>
+<p class="text-xl text-on-surface-variant font-body font-light leading-relaxed">
+                Exploring the intersection of ethereal light and structural integrity. A collection of digital experiences crafted with precision.
+            </p>
+</div>
+<!-- Projects Grid - Bento Style -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-[400px]">
+<!-- Project Card 1: Featured (Large) -->
+<a class="group md:col-span-8 glass-panel rounded-xl overflow-hidden relative glow-hover transition-all duration-500 flex flex-col justify-end p-8" href="#">
+<div class="absolute inset-0 w-full h-full -z-10">
+<img alt="Abstract flowing liquid shapes in deep blue and purple hues with ethereal lighting" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700" data-alt="abstract flowing liquid forms in deep navy blue and soft lavender with bioluminescent lighting and smooth glass textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAybOj_09fcdll03Fk2rCIojRuGkoc8nlo9fn12vnkMA7ACdF-ktYB5xsvbO9zgNTjPxD3gwSanTzZGwEYuARWeQF--Yx2hB54DTh4b0fo5IIAZmLOpDNhQC_fbGDwZUHV3CuBYbyDqdxpJA17HnyO3Q2gFT0MFnmsNbWekhO5wx4sBvLmXaiGreb-iGnLaBVNQnvqZuc8OyQM7LMKZGLKI96F1L7e01jyUQWshIWNc5Y34P3lMqTXIm1hp26tqPE15xRj4HNhJyU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-primary text-sm font-label tracking-widest mb-2 block uppercase">Digital Product</span>
+<h2 class="text-4xl font-headline font-bold text-on-surface mb-3">Nebula OS</h2>
+<p class="text-on-surface-variant max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        A next-generation operating system interface focusing on spatial awareness and fluid navigation.
+                    </p>
+</div>
+</a>
+<!-- Project Card 2: Square -->
+<a class="group md:col-span-4 glass-panel rounded-xl overflow-hidden relative glow-hover transition-all duration-500 flex flex-col justify-end p-8" href="#">
+<div class="absolute inset-0 w-full h-full -z-10">
+<img alt="Cybernetic server room with glowing blue lights" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700" data-alt="futuristic server room or data center with glowing ice-blue neon lights and dark metallic surfaces in a cinematic sci-fi style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKvkiAkcxrx8P0m6ov1IPQAPlB_RUUmIEps0BvOeCZc1viVr32MEHl_rPueaIghRG5z7d2wDkkX_BfivDKoYvlHidLTIiTO_WajszKN4FEqyeDk-Inb2GUkRZ7PGnnXOXTj8Zr9t4lgzZBer2Z-fvvaJVQqQNplEC_tfHkL3IIjN5KNal6pZKCIn3DjAIL269TZarfgk_QfhUbJ5xmcQi8ZQzvAxDGRFezlGntuNwoOdfio661djOLJwON-v6tpF3k9E4gHwKKpoo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<span class="text-tertiary text-xs font-label tracking-widest mb-2 block uppercase">Infrastructure</span>
+<h2 class="text-2xl font-headline font-bold text-on-surface">Cryo Vault</h2>
+</div>
+</a>
+<!-- Project Card 3: Square -->
+<a class="group md:col-span-4 glass-panel rounded-xl overflow-hidden relative glow-hover transition-all duration-500 flex flex-col justify-end p-8" href="#">
+<div class="absolute inset-0 w-full h-full -z-10 bg-surface-container-highest">
+<img alt="Minimalist 3D geometric shapes" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700" data-alt="minimalist 3d render of frosted glass geometric shapes floating in a dark atmospheric void with soft blue rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoR5oGSt-hc5604kPm7DF_pXx4bMDJ3kou1VDjIlWQcnD85QKl5oU7ANAztP7s7zEgTTqdWu7hDLR_q-w9Dj-IPEelloVYO_X1OKcYYXn99YEgqC4NtIiz5QEzjtovfY9gpWmTryyiwiv0Bs5pYApeekTl_zl1kYuU7vloIwprKU2UiMum6Xzf-Gw4e0j31dd9ZrzYNvPcypNd5kjOMpyqIQO78HEkq4vahMWFMPJaAsII-fHz5nhQCvHL3stbjXFBdJSV8hSuWd0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<span class="text-primary text-xs font-label tracking-widest mb-2 block uppercase">Brand Identity</span>
+<h2 class="text-2xl font-headline font-bold text-on-surface">Aura Platform</h2>
+</div>
+</a>
+<!-- Project Card 4: Wide -->
+<a class="group md:col-span-8 glass-panel rounded-xl overflow-hidden relative glow-hover transition-all duration-500 flex flex-col justify-end p-8" href="#">
+<div class="absolute inset-0 w-full h-full -z-10">
+<img alt="High-tech glowing circuit board patterns" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700" data-alt="macro photography of a microchip or circuit board with glowing neon cyan traces and dark dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmJ9kUYLtV2v8LY645Lhd2zsH-m14ixUs9HdJCjd0aD2OqKHy6VhILC9a73_JGZwYnzbXu7YaSxZrdW1LYYlXsmphemGYZa5AH1Pma1B9qOdwj0y8RxoW6kWEwsvU6nqeAjTOwAEgJvZDvdKf3WJ6lu8oLIwceadQel1pPL1qF7FL76TY43EGYLoKO09_PONQoXKWYCRD2dDzX5y4pod1g5ndy9X6h3oNL2XsbRJwzFCm13HjQ0YrhZbM9Y9YaqBSzEQqLcRh_qJU"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-lg">
+<span class="text-secondary text-sm font-label tracking-widest mb-2 block uppercase">Fintech</span>
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-3">Quantum Ledger</h2>
+<p class="text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        Redefining institutional trading interfaces with real-time data visualization in a serene environment.
+                    </p>
+</div>
+</a>
+</div>
+<!-- Load More Action -->
+<div class="mt-20 flex justify-center">
+<button class="glass-elevated text-on-surface px-8 py-4 rounded-full hover:bg-surface-container hover:text-primary transition-all duration-300 flex items-center space-x-3 group">
+<span class="font-label font-semibold tracking-wide">View Archive</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-slate-950/80 backdrop-blur-2xl border-t border-sky-300/5 none opacity-70 hover:opacity-100 duration-300">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-12 max-w-7xl mx-auto font-inter text-xs tracking-wide">
+<div class="text-lg font-bold text-sky-300 mb-6 md:mb-0">GLACIER</div>
+<div class="flex space-x-6 mb-6 md:mb-0">
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all" href="#">Layers</a>
+</div>
+<div class="text-slate-500">
+                © 2024 Glacier Portfolio. Crafted with Frozen Light.
+            </div>
+</div>
+</footer>
+</body></html>

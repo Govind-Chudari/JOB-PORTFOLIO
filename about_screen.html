@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About &amp; Contact - Glacier</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e0e8f0",
+                        "error": "#ff6b6b",
+                        "on-tertiary": "#1a002e",
+                        "on-secondary-fixed-variant": "#2a4a5e",
+                        "outline": "#4a6070",
+                        "tertiary-fixed-dim": "#c8a0f0",
+                        "surface-tint": "#7dd3fc",
+                        "surface-container": "#141c2e",
+                        "surface-container-highest": "#202c42",
+                        "tertiary-container": "#3d2060",
+                        "primary-fixed": "#c8eaff",
+                        "primary-container": "#0e4d6e",
+                        "tertiary-fixed": "#e8d0ff",
+                        "surface-container-lowest": "#0a0e1a",
+                        "inverse-on-surface": "#0a0e1a",
+                        "on-secondary-container": "#c0d8e8",
+                        "on-primary-container": "#c8eaff",
+                        "surface-bright": "#1a2438",
+                        "secondary-container": "#1a3a4e",
+                        "inverse-surface": "#e0e8f0",
+                        "outline-variant": "#2a3a48",
+                        "on-tertiary-fixed-variant": "#4d2a73",
+                        "secondary": "#88b4cc",
+                        "on-tertiary-container": "#e8d0ff",
+                        "on-primary-fixed": "#001f2e",
+                        "on-tertiary-fixed": "#1a002e",
+                        "on-surface-variant": "#a0b4c4",
+                        "inverse-primary": "#0a4c6e",
+                        "surface-variant": "#1a2438",
+                        "on-error-container": "#ffb3b3",
+                        "on-background": "#e0e8f0",
+                        "primary": "#7dd3fc",
+                        "surface": "#0f1524",
+                        "surface-container-high": "#1a2438",
+                        "on-secondary": "#001f2e",
+                        "on-primary": "#001f2e",
+                        "background": "#0a0e1a",
+                        "surface-dim": "#0f1524",
+                        "surface-container-low": "#111828",
+                        "secondary-fixed": "#c0d8e8",
+                        "primary-fixed-dim": "#7dd3fc",
+                        "on-secondary-fixed": "#0d1f2b",
+                        "secondary-fixed-dim": "#88b4cc",
+                        "on-primary-fixed-variant": "#004d73",
+                        "on-error": "#1a0000",
+                        "tertiary": "#c8a0f0",
+                        "error-container": "#3d1414"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "display": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col antialiased selection:bg-primary/30 selection:text-primary-fixed relative overflow-x-hidden">
+<!-- Subtle Background Ambient Glow -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden flex justify-center">
+<div class="w-[800px] h-[600px] bg-primary/5 blur-[120px] rounded-full absolute -top-40 opacity-50 mix-blend-screen"></div>
+<div class="w-[600px] h-[400px] bg-tertiary/5 blur-[100px] rounded-full absolute bottom-0 left-10 opacity-30 mix-blend-screen"></div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-md font-inter antialiased tracking-tight border-b border-sky-300/10 shadow-[0_0_30px_rgba(125,211,252,0.05)] ease-in-out transform">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<!-- Brand -->
+<a class="text-xl font-semibold text-sky-300 tracking-widest uppercase ease-in-out transform active:scale-95" href="#">
+                GLACIER
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium" href="#">Work</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium" href="#">Expertise</a>
+<a class="text-slate-400 hover:text-sky-100 transition-colors duration-500 text-sm font-medium" href="#">Process</a>
+<a aria-current="page" class="text-sky-300 border-b border-sky-300 pb-1 hover:text-sky-100 transition-colors duration-500 text-sm font-medium" href="#">About</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<a class="text-sky-300 text-sm font-medium hover:text-sky-100 transition-colors duration-500 border border-sky-300/30 px-5 py-2 rounded-full hover:bg-sky-300/10 ease-in-out transform active:scale-95" href="#contact">
+                    Connect
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-sky-300 hover:text-sky-100 transition-colors duration-500">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow z-10 pt-32 pb-24 px-6 md:px-12 flex flex-col items-center w-full max-w-7xl mx-auto">
+<!-- Bio Section -->
+<section class="w-full max-w-3xl mx-auto text-center mt-12 md:mt-24 mb-16 md:mb-24">
+<h1 class="font-headline text-4xl md:text-6xl font-semibold tracking-tight text-on-surface mb-6 drop-shadow-md">
+                Shaping digital ethereal experiences.
+            </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant font-light leading-relaxed mb-8">
+                I am a multidisciplinary designer focused on creating interfaces that feel less like software and more like natural, luminous environments. Bridging the gap between strict systematic logic and atmospheric visual poetry.
+            </p>
+<div class="flex justify-center items-center space-x-2 text-primary/80">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-sm tracking-wide uppercase font-medium">Available Worldwide</span>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="w-full max-w-2xl mx-auto" id="contact">
+<div class="bg-surface/60 backdrop-blur-xl border border-primary/10 rounded-2xl p-8 md:p-12 shadow-[0_0_40px_rgba(125,211,252,0.03)]">
+<div class="text-center mb-10">
+<h2 class="text-2xl font-headline font-medium text-on-surface mb-2">Initiate Contact</h2>
+<p class="text-sm text-on-surface-variant">Let's craft something luminous together.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name Input -->
+<div class="space-y-2">
+<label class="block text-xs font-medium text-on-surface-variant uppercase tracking-wider ml-1" for="name">Name</label>
+<input class="w-full bg-surface-container-low/50 border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder-on-surface-variant/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-all backdrop-blur-sm" id="name" name="name" placeholder="Your full name" type="text"/>
+</div>
+<!-- Email Input -->
+<div class="space-y-2">
+<label class="block text-xs font-medium text-on-surface-variant uppercase tracking-wider ml-1" for="email">Email</label>
+<input class="w-full bg-surface-container-low/50 border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder-on-surface-variant/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-all backdrop-blur-sm" id="email" name="email" placeholder="you@domain.com" type="email"/>
+</div>
+</div>
+<!-- Message Input -->
+<div class="space-y-2">
+<label class="block text-xs font-medium text-on-surface-variant uppercase tracking-wider ml-1" for="message">Message</label>
+<textarea class="w-full bg-surface-container-low/50 border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder-on-surface-variant/50 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-all backdrop-blur-sm resize-none" id="message" name="message" placeholder="Detail your inquiry..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4 flex justify-center">
+<button class="group relative inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full overflow-hidden transition-all duration-300 hover:bg-primary/20 hover:border-primary/40 hover:shadow-[0_0_20px_rgba(125,211,252,0.15)] focus:outline-none focus:ring-2 focus:ring-primary/50 active:scale-95" type="submit">
+<span class="relative z-10 flex items-center gap-2">
+                                Send Transmission
+                                <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-slate-950/80 backdrop-blur-2xl border-t border-sky-300/5 font-inter text-xs tracking-wide relative z-20">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-12 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-sky-300 mb-6 md:mb-0 opacity-70 hover:opacity-100 duration-300">
+                GLACIER
+            </div>
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all duration-300 opacity-70 hover:opacity-100" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all duration-300 opacity-70 hover:opacity-100" href="#">GitHub</a>
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all duration-300 opacity-70 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-sky-300 hover:glow-sm transition-all duration-300 opacity-70 hover:opacity-100" href="#">Layers</a>
+</div>
+<div class="text-slate-500 text-center md:text-right opacity-70 hover:opacity-100 duration-300">
+                © 2024 Glacier Portfolio. Crafted with Frozen Light.
+            </div>
+</div>
+</footer>
+</body></html>
