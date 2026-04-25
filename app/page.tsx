@@ -27,18 +27,20 @@ export default function Home() {
 
     gsap.ticker.lagSmoothing(0);
 
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = anchor.getAttribute("href");
-        if (targetId) {
-          const target = document.querySelector(targetId) as HTMLElement;
-          if (target) {
-            lenis.scrollTo(target);
-          }
-        }
-      });
+  const href = (e.currentTarget as HTMLAnchorElement).getAttribute("href");
+
+  if (!href || !href.startsWith("#")) return;
+
+  e.preventDefault();
+
+  const target = document.querySelector(href) as HTMLElement;
+
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+});
     });
 
     return () => {
