@@ -1,114 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Jim+Nightshade&display=swap');*/
-/* @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Jim+Nightshade&family=Margarine&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap'); */
 @import "tailwindcss";
 
-
 :root {
-  --background: #0a0e1a;
-  --foreground: #e0e8f0;
-  
-  --primary: #7dd3fc;
-  --on-primary: #001f2e;
-  --primary-container: #0e4d6e;
-  --on-primary-container: #c8eaff;
-  
-  --secondary: #88b4cc;
-  --on-secondary: #001f2e;
-  --secondary-container: #1a3a4e;
-  --on-secondary-container: #c0d8e8;
-  
-  --tertiary: #c8a0f0;
-  --on-tertiary: #1a002e;
-  --tertiary-container: #3d2060;
-  --on-tertiary-container: #e8d0ff;
-  
-  --error: #ff6b6b;
-  --on-error: #1a0000;
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #00d4ff;
+
+  --primary: #00d4ff;
+  --on-primary: #000000;
+  --primary-container: #0a3a4a;
+  --on-primary-container: #b0eeff;
+
+  --secondary: #8b5cf6;
+  --on-secondary: #000000;
+  --secondary-container: #2d1a6e;
+  --on-secondary-container: #ddd0ff;
+
+  --tertiary: #f59e0b;
+  --on-tertiary: #000000;
+  --tertiary-container: #5c3d0e;
+  --on-tertiary-container: #ffe4a0;
+
+  --error: #ff4444;
+  --on-error: #000000;
   --error-container: #3d1414;
   --on-error-container: #ffb3b3;
-  
-  --surface: #0f1524;
-  --on-surface: #e0e8f0;
-  --surface-variant: #1a2438;
-  --on-surface-variant: #a0b4c4;
-  
-  --outline: #4a6070;
-  --outline-variant: #2a3a48;
-  
-  --surface-container-lowest: #0a0e1a;
-  --surface-container-low: #111828;
-  --surface-container: #141c2e;
-  --surface-container-high: #1a2438;
-  --surface-container-highest: #202c42;
+
+  --surface: #0a0a0a;
+  --on-surface: #ffffff;
+  --surface-variant: #111111;
+  --on-surface-variant: #999999;
+
+  --outline: #333333;
+  --outline-variant: #1a1a1a;
+
+  --surface-container-lowest: #000000;
+  --surface-container-low: #0a0a0a;
+  --surface-container: #111111;
+  --surface-container-high: #1a1a1a;
+  --surface-container-highest: #222222;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
   --color-primary: var(--primary);
   --color-on-primary: var(--on-primary);
   --color-primary-container: var(--primary-container);
   --color-on-primary-container: var(--on-primary-container);
-  
   --color-secondary: var(--secondary);
   --color-on-secondary: var(--on-secondary);
   --color-secondary-container: var(--secondary-container);
   --color-on-secondary-container: var(--on-secondary-container);
-  
   --color-tertiary: var(--tertiary);
   --color-on-tertiary: var(--on-tertiary);
   --color-tertiary-container: var(--tertiary-container);
   --color-on-tertiary-container: var(--on-tertiary-container);
-  
   --color-error: var(--error);
   --color-on-error: var(--on-error);
   --color-error-container: var(--error-container);
   --color-on-error-container: var(--on-error-container);
-  
   --color-surface: var(--surface);
   --color-on-surface: var(--on-surface);
   --color-surface-variant: var(--surface-variant);
   --color-on-surface-variant: var(--on-surface-variant);
-  
   --color-outline: var(--outline);
   --color-outline-variant: var(--outline-variant);
-  
   --color-surface-container-lowest: var(--surface-container-lowest);
   --color-surface-container-low: var(--surface-container-low);
   --color-surface-container: var(--surface-container);
   --color-surface-container-high: var(--surface-container-high);
   --color-surface-container-highest: var(--surface-container-highest);
 
-  /* --font-headline: 'Coiny', cursive;
-  --font-display: 'Caveat Brush', cursive;
-  --font-body: 'Caveat Brush', cursive;
-  --font-label: 'Caveat Brush', cursive;
-  --font-sans: 'Caveat Brush', cursive; */
+  --font-headline: var(--font-space-grotesk), sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-space-grotesk), sans-serif;
+  --font-label: var(--font-jetbrains-mono), monospace;
+  --font-sans: var(--font-space-grotesk), sans-serif;
 
-  /* --font-headline: 'Margarine', cursive;
-  --font-display: 'Margarine', cursive;
-  --font-body: 'Margarine', cursive;
-  --font-label: 'Margarine', cursive;
-  --font-sans: 'Margarine', cursive; */
-
-/* 
-  --font-headline: 'Jim Nightshade', cursive;
-  --font-display: 'Jim Nightshade', cursive;
-  --font-body: 'Jim Nightshade', cursive;
-  --font-label: 'Jim Nightshade', cursive; */
-  /* --font-sans: 'Jim Nightshade', cursive; */
-
-
-  --font-headline: 'Coiny', sans-serif;
-  --font-display: 'Coiny', sans-serif;
-  --font-body: 'Coiny', sans-serif;
-  --font-label: 'Coiny', sans-serif;
-  --font-sans: 'Coiny', sans-serif;
-  
   --radius-DEFAULT: 0.5rem;
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
@@ -126,4 +94,132 @@ body {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
   display: inline-block;
   line-height: 1;
+}
+
+/* ── Editorial Typography ── */
+.editorial-huge {
+  font-size: clamp(5rem, 16vw, 14rem);
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.editorial-huge-outline {
+  font-size: clamp(5rem, 16vw, 14rem);
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px currentColor;
+  -webkit-text-fill-color: transparent;
+}
+
+.editorial-large {
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* ── Animations ── */
+@keyframes letterChange {
+  0% { opacity: 0; transform: translateY(12px); filter: blur(8px); }
+  100% { opacity: 1; transform: translateY(0px); filter: blur(0px); }
+}
+
+.animate-letterChange {
+  animation: letterChange 0.35s ease forwards;
+}
+
+.hero-title-gradient {
+  background: linear-gradient(135deg, #fff 0%, #67e8f9 40%, #00d4ff 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heroGradientShift 4s ease infinite;
+}
+
+@keyframes heroGradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-border-glow {
+  background: conic-gradient(
+    from var(--hero-glow-angle, 0deg),
+    transparent 0%,
+    rgba(0, 212, 255, 0.4) 10%,
+    transparent 20%,
+    transparent 50%,
+    rgba(139, 92, 246, 0.3) 60%,
+    transparent 70%
+  );
+  animation: heroGlowSpin 6s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  padding: 1.5px;
+}
+
+@keyframes heroGlowSpin {
+  to { --hero-glow-angle: 360deg; }
+}
+
+@property --hero-glow-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.hero-sparkle {
+  animation: heroSparkle 2s ease-in-out infinite;
+}
+
+@keyframes heroSparkle {
+  0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+  50% { opacity: 0.6; transform: scale(0.85) rotate(180deg); }
+}
+
+.hero-line-expand {
+  animation: heroLineExpand 1.5s ease-out 0.5s both;
+}
+
+@keyframes heroLineExpand {
+  from { transform: scaleX(0); transform-origin: left; }
+  to { transform: scaleX(1); transform-origin: left; }
+}
+
+.hero-pulse-right {
+  animation: heroPulseRight 1.5s ease-in-out infinite;
+}
+
+@keyframes heroPulseRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+.hero-shimmer {
+  animation: heroShimmer 2s ease-in-out infinite;
+}
+
+@keyframes heroShimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 0px;
 }

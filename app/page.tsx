@@ -1,66 +1,22 @@
-"use client";
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
-
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+// import Hackathons from "./components/Hackathons";
 
 export default function Home() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const lenis = new Lenis();
-
-    lenis.on("scroll", ScrollTrigger.update);
-
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
-
-    gsap.ticker.lagSmoothing(0);
-
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", (e) => {
-  const href = (e.currentTarget as HTMLAnchorElement).getAttribute("href");
-
-  if (!href || !href.startsWith("#")) return;
-
-  e.preventDefault();
-
-  const target = document.querySelector(href) as HTMLElement;
-
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-});
-    });
-
-    return () => {
-      lenis.destroy();
-      gsap.ticker.remove((time) => lenis.raf(time * 1000));
-    };
-  }, []);
-
   return (
-    <div className="bg-black min-h-screen text-white font-sans selection:bg-cyan-500/30 overflow-x-hidden">
+    <main className="bg-black min-h-screen text-white">
       <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      {/* <Hackathons /> */}
+      <Contact />
+    </main>
   );
 }
