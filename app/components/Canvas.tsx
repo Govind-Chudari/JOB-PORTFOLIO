@@ -31,7 +31,7 @@ export default function Canvas({ children, introRef, onLoaded }: CanvasProps) {
 
   const particlesRef = useRef<any[]>([]);
   const mouseRef = useRef({ x: -1000, y: -1000, radius: 80 });
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number | undefined>(undefined);
   const scrollProgressRef = useRef(0);
 
   const [frameCount, setFrameCount] = useState(0);

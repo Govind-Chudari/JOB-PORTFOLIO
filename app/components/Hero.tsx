@@ -15,7 +15,7 @@ const LOGOS = [
 const TechLogoMorph = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<any[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const [logoIndex, setLogoIndex] = useState(0);
 
   // 1. Animation Loop (Runs continuously, never restarted)
