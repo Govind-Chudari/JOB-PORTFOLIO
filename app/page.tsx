@@ -5,7 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-// import Hackathons from "./components/Hackathons";
+import Hackathons from "./components/Hackathons";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      {/* <Hackathons /> */}
+      <Hackathons />
       <Contact />
     </main>
   );

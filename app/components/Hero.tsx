@@ -217,10 +217,10 @@ export default function Hero() {
           </div>
 
           <div className={`flex flex-col transition-all duration-1000 ease-out ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '0.4s' }}>
-            <h1 className="text-8xl font-black tracking-tighter text-white leading-[0.85]">
+            <h1 className="text-[16vw] sm:text-[14vw] font-black tracking-tighter text-white leading-[0.85]">
               GOVIND
             </h1>
-            <h1 className="text-8xl font-black tracking-tighter text-transparent leading-[1] -mt-1" style={{ WebkitTextStroke: '1px rgba(34, 211, 238, 0.4)' }}>
+            <h1 className="text-[16vw] sm:text-[14vw] font-black tracking-tighter text-transparent leading-[1] -mt-1" style={{ WebkitTextStroke: '1px rgba(34, 211, 238, 0.4)' }}>
               CHUDARI
             </h1>
           </div>
